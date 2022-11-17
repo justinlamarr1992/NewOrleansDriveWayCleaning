@@ -173,21 +173,21 @@ function galleryModal() {
 }
 
 // Team
-function changeToChris() {
-  var chris = document.getElementById("team-pic-chris");
-  var jen = document.getElementById("team-pic-jen");
-  chris.classList.add("displayBlock");
-  jen.classList.remove("displayBlock");
-  chris.classList.remove("displayNone");
-  jen.classList.add("displayNone");
+function changeToDominic() {
+  var dom = document.getElementById("team-pic-dom");
+  var matt = document.getElementById("team-pic-matt");
+  dom.classList.add("displayBlock");
+  matt.classList.remove("displayBlock");
+  dom.classList.remove("displayNone");
+  matt.classList.add("displayNone");
   return false;
 }
 function changeToJen() {
-  var chris = document.getElementById("team-pic-chris");
-  var jen = document.getElementById("team-pic-jen");
-  jen.classList.add("displayBlock");
-  chris.classList.remove("displayBlock");
-  jen.classList.remove("displayNone");
-  chris.classList.add("displayNone");
+  var dom = document.getElementById("team-pic-dom");
+  var matt = document.getElementById("team-pic-matt");
+  matt.classList.add("displayBlock");
+  dom.classList.remove("displayBlock");
+  matt.classList.remove("displayNone");
+  dom.classList.add("displayNone");
   return false;
 }
