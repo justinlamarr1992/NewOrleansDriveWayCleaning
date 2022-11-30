@@ -54,21 +54,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Pacifico&display=swap"
       rel="stylesheet"
     />
-    <!-- TODO Add google analtics here -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-5RKEQ0WG0Z"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-5RKEQ0WG0Z");
-    </script>
     <script
       src="https://kit.fontawesome.com/a3c1e4db5c.js"
       crossorigin="anonymous"
@@ -106,7 +92,7 @@
           We Offer quality Driveway Cleaning and pressure washing services. Let
           us transform your home or business
         </h4>
-        <div class="test-circle"></div>
+        <div class="glare-circle"></div>
         <a class="hero-cta-button" href="#cta"><button>Contact Us</button></a>
       </div>
     </div>
@@ -256,9 +242,6 @@
                 </button>
               </div>
             </div>
-            <!-- <div class="modal-footer">
-              <h3>Which Cakeball would you like to Order?</h3>
-            </div> -->
           </div>
         </div>
       </div>
@@ -283,7 +266,6 @@
           <i class="fas fa-user-circle fa-4x member-mini-pic"></i>
           <h4 class="member-name">Dominic</h4>
           <h6 class="member-role text-gray">Founder</h6>
-          <!-- <div class="member-social">social Media links</div> -->
           <div class="member-social">
             <a
               href="https://www.facebook.com/profile.php?id=100054439272738"
@@ -344,15 +326,8 @@
               week!
             </h6>
             <div class="test-user">
-              <!-- <a
-                class="test-user"
-                target="_blank"
-                href="https://www.facebook.com/Chriss-Creative-Cake-Balls-and-Pops-2132556053741462/reviews/?ref=page_internal"
-              > -->
               <i class="fas fa-user-circle fa-5x test-image"></i>
               <h5 class="test-name">Debra M.</h5>
-              <!-- <p class="test-source">Facebook</p> -->
-              <!-- </a> -->
             </div>
           </div>
           <div class="testimony-block test-2">
@@ -404,7 +379,9 @@
             <h6>Porch Cleaning</h6>
             <h6>Sodium Hypochlorite (Concrete)</h6>
           </div>
-          <button class="price-block-button">Contact Us</button>
+          <button class="price-block-button">
+            <a href="#cta" class="price-block-price-price-link">Contact Us</a>
+          </button>
           <!-- <button class="price-block-button">Purchase</button> -->
         </div>
 
@@ -419,85 +396,30 @@
             <h6>Deck Washing</h6>
             <h6>Commercial Parking Lot</h6>
           </div>
-          <button class="price-block-button button-2">Contact Us</button>
+          <button class="price-block-button button-2">
+            <a href="#cta" class="price-block-price-price-link">Contact Us</a>
+          </button>
           <!-- <button class="price-block-button">Purchase</button> -->
         </div>
-
-        <!-- <div class="price-block price-2">
-          <h4 class="price-block-title">CakeBall Event</h4>
-          <h3 class="price-block-price">Call Us</h3>
-          <h5 class="price-block-description">Personal Design</h5>
-          <h5 class="price-block-description">Very Affordable</h5>
-          <h5 class="price-block-description">Weddings, Birthdays</h5>
-          <h5 class="price-block-description">Gender Reveals, Graduations</h5>
-
-        </div> -->
       </div>
     </div>
     <div id="cta">
-      <img class="cta-background" src="./images/NewOrleansBG.png" alt="" />
+      <!-- <img class="cta-background" src="./images/NewOrleansBG.png" alt="" /> -->
       <div class="cta-container">
-        <h2 class="cta-title">Order Here</h2>
+        <h2 class="cta-title">Contact Us</h2>
         <h5 class="cta-description">
-          Also leave General Details about what you would like. The more
-          Specific the better. If you can't find a design you would like visit
-          our Facebook or Instagram in the meet Our Team section.
+          Contact us for a free estimate. We generally use google earth for our
+          estimates so please include what you would like the quote for aswell
+          as the address.
         </h5>
-        <form class="cta-form" method="POST">
-          <input
-            class="cta-form-name"
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your Name"
-            required
-          />
-          <input
-            class="cta-form-email"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your Email"
-            required
-          />
-          <input
-            class="cta-form-phone"
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="Phone Number"
-            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-          />
-          <input
-            class="cta-form-address"
-            type="text"
-            id="address"
-            name="address"
-            placeholder="Your Address"
-          />
-
-          <textarea
-            class="cta-form-message"
-            type="text"
-            id="message"
-            name="request"
-            placeholder="Requesting Quote/ Other Questions?"
-            rows="4"
-            cols="50"
-          ></textarea>
-          <input
-            type="hidden"
-            name="_next"
-            value="https://creativecakeballs.com"
-          />
-          <!-- <input type="hidden" name="_cc" value="creativecakeballs@gmail.com" /> -->
-          <!-- <input type="hidden" name="_subject" value="CakeBall Request!" /> -->
-          <!-- <input type="hidden" name="_template" value="table" /> -->
-
-          <button class="cta-form-button" id="submit" type="submit">
-            Submit
-          </button>
-        </form>
+        <iframe
+          class="markate-stuff"
+          id="markate-widget-contact-iframe"
+          src="https://www.markate.com/public/widget/contact?id=106d06505a60e11e8bfcc94c77f6ea76:45426:fc8cfa21"
+          scrolling="no"
+          frameborder="0"
+          allowTransparency="true"
+        ></iframe>
       </div>
     </div>
 
@@ -517,8 +439,10 @@
             >(913) 963-2229</a
           >
           <br />
-          <a href="mailto:creativecakeballs@gmail.com" class="footer-info-word"
-            >Need Email here</a
+          <a
+            href="mailto:neworleansdrivewaycleaning@gmail.com"
+            class="footer-info-word"
+            >NewOrleansDrivewayCleaning@Gmail.com</a
           >
           <br />
         </div>
