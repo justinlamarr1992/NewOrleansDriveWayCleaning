@@ -14,21 +14,10 @@
   --pri-c-rgb: rgba(29, 47, 75, 1);
   --sec-c: #6CD0FF;
   --tri-c: ##72F8BB;
-  --qua-c: ##FFFFFF;
+  --qua-c: #F9F871;
+  /* --qua-c: ##FFFFFF; */
   --qua-c-dark: rgb(216, 187, 140);
   --navb-c: #ffffff;
-
-  /* Color 2 */
-  /* --c-background-down: linear-gradient(to bottom, #c89e58, #ffffff);
-  --c-background-up: linear-gradient(to top, #c89e58, #ffffff);
-  --pri-c: #20304f;
-  --pri-c-rgb: rgb(34, 62, 153);
-  --sec-c: #e7d8be;
-  --tri-c: #f51b7e;
-  --qua-c: #c89e58;
-  --qua-c-dark: rgb(216, 187, 140);
-  --navb-c: #c89e58; */
-
 
   /* Typography */
   --head-font: "Pacifico", cursive;
@@ -221,7 +210,7 @@ body {
     background: #e5e5e5;
   } */
   input[type="text"],
-  input[type="email"] {
+  input[type="email"],input[type="tel"] {
     border: none;
     border-radius: var(--brad);
     font-size: var(--wb);
@@ -513,7 +502,7 @@ body {
     display: block;
   }
   .nav-links li a:hover {
-    color: var(--tri-c);
+    color: var(--qua-c);
     background: none;
   }
 
@@ -551,11 +540,14 @@ body {
     grid-row: 1/2;
     z-index: 2;
     align-self: end;
+    padding-left: 50px;
   }
   .hero-description {
     grid-column: 1/2;
     grid-row: 2/3;
     z-index: 2;
+    padding-left: 50px;
+
   }
   .hero-cta-button {
     z-index: 2;
@@ -566,8 +558,19 @@ body {
     height: 100%;
     grid-column: 1/4;
     grid-row: 1/4;
-    opacity: 0.35;
+    /* opacity: 0.35; */
     object-fit: cover;
+  }
+  .test-circle{
+    width: 40%;
+    height: 65%;
+    border-radius: 50%;
+    z-index: 1;
+    position:absolute;
+    background-color: white;
+    opacity: 0.55;
+    filter: blur(1.5rem);
+
   }
   /* About Section */
   #about {
@@ -1061,17 +1064,20 @@ body {
     grid-column: 2/3;
     grid-row: 1/2;
   }
-  .select-flavor {
+  .cta-form-phone {
+    width: 100%;
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  .select-event {
+  .cta-form-address {
+    width: 100%;
     grid-column: 2/3;
     grid-row: 2/3;
   }
 
   .cta-form-message {
     width: 100%;
+    padding-top: 10px;
     grid-column: 1/3;
     grid-row: 3/4;
   }
@@ -1718,10 +1724,10 @@ body {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  .select-flavor {
+  .cta-form-phone {
     grid-row: 3/4;
   }
-  .select-event {
+  .cta-form-address {
     grid-column: 1/2;
     grid-row: 4/5;
   }
