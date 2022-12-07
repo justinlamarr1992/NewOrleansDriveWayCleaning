@@ -1025,29 +1025,36 @@ body {
     height: 65vh;
     border: none;
     overflow: hidden;
+    color: orange;
   }
 
   /* Footer */
   footer {
     background-color: var(--f-background);
     color: var(--sec-t);
-  }
-  .footer-container {
     display: grid;
-    grid-template-columns: 10% 1fr 0.5fr 0.5fr 10%;
+    grid-template-columns: var(--wcol);
     grid-template-rows: var(--wrow);
   }
-  .foot-first {
+  .footer-container {
     grid-column: 2/3;
     grid-row: 2/3;
-    align-self: end;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: auto;
+  }
+  .foot-first {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: start;
   }
   .footer-disclaimer {
     margin: 0;
   }
   .foot-second {
-    grid-column: 3/4;
-    grid-row: 2/3;
+    grid-column: 2/3;
+    grid-row: 1/2;
     align-self: center;
     justify-self: center;
   }
@@ -1057,8 +1064,10 @@ body {
     color: var(--sec-t);
   }
   .foot-third {
-    grid-column: 4/5;
-    grid-row: 2/3;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1292,7 +1301,7 @@ body {
   .testimony-block {
     justify-self: center;
     padding: 30px 20px;
-    width: 550px;
+    width: 100%;
   }
 
   .test-user {
@@ -1341,6 +1350,33 @@ body {
   #cta {
     grid-template-columns: var(--mcol);
     grid-template-rows: var(--wrow);
+  }
+  /* Footer */
+  footer {
+    grid-template-columns: var(--mcol);
+    grid-template-rows: var(--mrow);
+  }
+  .footer-container{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+  .foot-first {
+    align-self: center;
+    justify-self: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .foot-second{
+    justify-self: center;
+    grid-column:1/2 ;
+    grid-row: 2/3;
+    padding: 20px 0;
+  }
+  .foot-third{
+    padding: 20px 0;
+grid-column: 1/2;
+    grid-row: 3/4;
+    align-self: end;
   }
 }
 /* Mobile Landscape */
@@ -1591,26 +1627,7 @@ body {
     grid-row: 6/7;
   }
 
-  /* Footer */
-  .footer-container {
-    grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: 20px repeat(3, auto) 20px;
-  }
-  .foot-first {
-    align-self: center;
-    justify-self: center;
-  }
 
-  .foot-second {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    align-self: center;
-    justify-self: start;
-  }
-  .foot-third {
-    grid-column: 2/3;
-    grid-row: 4/5;
-  }
   .justappin {
     text-align: center;
   }
